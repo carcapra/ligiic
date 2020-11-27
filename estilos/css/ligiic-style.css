@@ -7,12 +7,175 @@
 	outline: none;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 @font-face {
-    font-family: 'Poppins';
-    src: url(../Assets/Fuentes/Poppins-Regular.ttf);
+    font-family: 'Roboto';
+    src: url(../fuentes/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #F5F6F9;
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 26px;
+	color: #404040;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 18px;
+	color: #404040;
+	font-weight: bold;
 }
 
 
+.title-parrafo {
+	font-size: 14px;
+	font-weight: normal;
+	color: #AEAEAE;
+}
+
+section.menu-nav {
+	position: fixed;
+	background-color: #fff;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15%;
+	padding: 15px;
+	border-right: 1px solid #D8D6D6;
+}
+
+section.container-inf-page {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 84%;
+	/* margin-left: ; */
+}
+
 .menu-nav img {
-    width: 100%;
+	width: 90%;
+	height: auto;
+}
+
+.menu-nav nav {
+	margin-top: 20px;
+	padding: 10px 0;
+}
+
+.menu-nav nav li {
+	margin: 10px 0;
+	height: 40px;
+	width: 100%;
+	font-size: 18px;
+	line-height: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.menu-nav nav li a {
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.menu-nav nav li.nav-active {
+	background-color: #205D99;
+	border-radius: 8px;
+}
+
+.menu-nav nav li.nav-active span {
+	color: white;
+}
+
+.menu-nav nav li svg {
+	font-size: 20px;
+}
+
+.menu-nav span {
+	color: #696969;
+	margin-left: 5px;
+}
+
+.cabecera {
+	/* position: relative; */
+	padding: 15px;
+	height: 12%;
+	padding-right: 3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #F5F6F9;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.cabecera img {
+	height: 100%;
+	width: auto;
+}
+
+.cabecera svg {
+	font-size: 20px;
+}
+
+#user-actions {
+	display: flex;
+	align-items: center;
+}
+
+#user-actions div, #user-actions svg {
+	margin: 0 10px;
+}
+
+.container-foto-user {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #D8D6D6;
+	background-image: url('https://dl.dropboxusercontent.com/s/d2l9s9lzm7k8mf1/Icono-Ligiic.png?dl=0');
+	background-size: cover;
+}
+
+.container-page-description {
+	margin: 4vh 0;
+}
+
+.declaraciones-para-pago {
+	margin: 4vh 0;
+	padding: 2vh;
+	width: 97%;
+	height: 30vh;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 14px;
+	/* overflow-y: scroll; */
+}
+
+.table-container-dec-pago {
+	overflow-y: scroll;
+}
+
+.declaraciones-para-pago svg {
+	font-size: 18px;
+}
+
+
+.container-bottom-dashboard {
+	margin: 4vh 0;
+	border: 1px solid blue;
+	width: 97%;
+	height: 35vh;
 }
